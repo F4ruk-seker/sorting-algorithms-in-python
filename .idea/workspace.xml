@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e3a59c-9204-4b29-ae3a-67a7781a265c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sort/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/base_sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sort/insertion_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/bubble_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/selection_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/selection_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/selection_sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
   "keyToString": {
     "Python.bubble_sort (1).executor": "Run",
     "Python.bubble_sort.executor": "Run",
+    "Python.insertion_sort.executor": "Run",
     "Python.main.executor": "Run",
     "Python.selection_sort (1).executor": "Run",
     "Python.selection_sort.executor": "Run",
@@ -57,7 +56,7 @@
       <recent name="C:\Users\seker\PycharmProjects\SortAlgorithms\sort" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bubble_sort (1)">
+  <component name="RunManager" selected="Python.insertion_sort">
     <configuration name="bubble_sort (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SortAlgorithms" />
       <option name="ENV_FILES" value="" />
@@ -94,6 +93,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\seker\PycharmProjects\SortAlgorithms\sort\bubble_sort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insertion_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SortAlgorithms" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sort" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sort/insertion_sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,6 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.insertion_sort" />
         <item itemvalue="Python.bubble_sort (1)" />
         <item itemvalue="Python.selection_sort (1)" />
         <item itemvalue="Python.bubble_sort" />

@@ -1,5 +1,5 @@
 """
-## Bubble Sort
+## Selection Sort
 
 @f4rukseker
 
