@@ -1,5 +1,10 @@
 """
+## Bubble Sort
 
+@f4rukseker
+
+linkedin:https://www.linkedin.com/in/faruk-seker/
+github:https://github.com/F4ruk-seker
 
 """
 from typing import NoReturn

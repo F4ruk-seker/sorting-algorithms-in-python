@@ -22,9 +22,7 @@ class BubbleSort:
         for first_index in range(len(self.list) - 1, 0, -1):
             for second_index in range(first_index):
                 if self.list[second_index] > self.list[second_index + 1]:
-                    _ = self.list[second_index]
-                    self.list[second_index] = self.list[second_index + 1]
-                    self.list[second_index + 1] = _
+                    self.list[second_index], self.list[second_index + 1] = self.list[second_index + 1], self.list[second_index]
 
 
 class BubbleSortTyper(BubbleSort):
@@ -47,14 +45,11 @@ class BubbleSortTyper(BubbleSort):
                 second_case: Any = self.to_type(self.list[second_index + 1])
 
                 if first_case > second_case:
-                    _ = self.list[second_index]
-                    self.list[second_index] = self.list[second_index + 1]
-                    self.list[second_index + 1] = _
+                    self.list[second_index], self.list[second_index + 1] = self.list[second_index + 1], self.list[second_index]
 
 
 if __name__ == '__main__':
     import random
-    random.seed(100)
     test_case = [random.randint(0, 100) for _ in list(range(0, 30))]
     bubble_sort: BubbleSort = BubbleSort(test_case)
 
