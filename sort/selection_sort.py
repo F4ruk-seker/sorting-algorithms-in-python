@@ -9,23 +9,17 @@ github:https://github.com/F4ruk-seker
 """
 from typing import NoReturn
 
+from sort import Sort
 
-class SelectionSort:
-    def __init__(self, _list: list):
-        self.__list: list = _list
-    
+
+class SelectionSort(Sort):
     def sort(self) -> NoReturn:
-        for first_index in range(len(self.__list)):
+        for first_index in range(len(self.list)):
             min_index: int = first_index
-            for second_index in range(first_index + 1, len(self.__list)):
-                if self.__list[second_index] < self.__list[min_index]:
+            for second_index in range(first_index + 1, len(self.list)):
+                if self.list[second_index] < self.list[min_index]:
                     min_index: int = second_index
-            self.__list[first_index], self.__list[min_index] = self.__list[min_index], self.__list[first_index]
-
-    @property
-    def result(self) -> list:
-        self.sort()
-        return self.__list
+            self.list[first_index], self.list[min_index] = self.list[min_index], self.list[first_index]
 
 
 def main() -> None:
@@ -34,7 +28,7 @@ def main() -> None:
     test_case = [random.randint(0, 200) for _ in list(range(0, 20))]
 
     selection_sort: SelectionSort = SelectionSort(test_case)
-    result: list = selection_sort.result
+    result: list = selection_sort.get_result()
 
     print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
 
