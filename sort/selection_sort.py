@@ -8,7 +8,7 @@ github:https://github.com/F4ruk-seker
 
 """
 from typing import NoReturn
-
+from performance import get_performance_metric
 from sort import Sort
 
 
@@ -20,26 +20,18 @@ class SelectionSort(Sort):
                 if self.list[second_index] < self.list[min_index]:
                     min_index: int = second_index
             self.list[first_index], self.list[min_index] = self.list[min_index], self.list[first_index]
+    @staticmethod
+    @get_performance_metric
+    def test(test_range: int = 30) -> NoReturn:
+        import random
 
+        test_case = [random.randint(0, 200) for _ in list(range(0, test_range))]
 
-def main() -> None:
-    import random
+        selection_sort: SelectionSort = SelectionSort(test_case)
+        result: list = selection_sort.get_result()
 
-    test_case = [random.randint(0, 200) for _ in list(range(0, 20))]
+        # print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
 
-    selection_sort: SelectionSort = SelectionSort(test_case)
-    result: list = selection_sort.get_result()
-
-    print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
-
-    del result
-    del selection_sort
-
-
-if __name__ == '__main__':
-    print(f'|{"-" * 110}|')
-    for test_count in range(5):
-        main()
-        print(f'|{"-"*110}|')
-
+        del result
+        del selection_sort
 

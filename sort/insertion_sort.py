@@ -7,8 +7,9 @@ linkedin:https://www.linkedin.com/in/faruk-seker/
 github:https://github.com/F4ruk-seker
 
 """
-from typing import Any
+from typing import NoReturn
 from sort import Sort
+from performance import get_performance_metric
 
 
 class InsertionSort(Sort):
@@ -21,14 +22,19 @@ class InsertionSort(Sort):
                 index_pointer -= 1
             self.list[index_pointer + 1] = key
 
+    @staticmethod
+    @get_performance_metric
+    def test(test_range: int = 30) -> NoReturn:
+        import random
 
-if __name__ == '__main__':
-    import random
+        test_case = [random.randint(0, 200) for _ in list(range(0, test_range))]
 
-    test_case = [random.randint(0, 200) for _ in list(range(0, 20))]
+        insertion_sort: InsertionSort = InsertionSort(test_case)
+        # print(f"| {'TEST-CASE:'.center(10)}|  {test_case}")
+        result: list = insertion_sort.get_result()
+        # print(f"|{'   RESULT: '.center(10)}|  {result}")
 
-    insertion_sort: InsertionSort = InsertionSort(test_case)
-    print(f"| {'TEST-CASE:'.center(10)}|  {test_case}")
-    result: list = insertion_sort.get_result()
-    print(f"|{'   RESULT: '.center(10)}|  {result}")
+
+        del result
+        del insertion_sort
 

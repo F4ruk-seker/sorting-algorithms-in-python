@@ -1,4 +1,5 @@
-from typing import Any, Union
+from typing import Any, Union, NoReturn
+from performance import get_performance_metric
 
 
 class Sort:
@@ -23,4 +24,7 @@ class Sort:
         obj: Any = self.str_to_number(obj) if type(obj) is str else obj
         obj: Any = int(obj) if type(obj) is bool else obj
         return obj
-
+    @staticmethod
+    @get_performance_metric
+    def test(test_range: int = 30, *args, **kwargs) -> NoReturn:
+        raise NotImplementedError()
