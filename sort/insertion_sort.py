@@ -24,17 +24,18 @@ class InsertionSort(Sort):
 
     @staticmethod
     @get_performance_metric
-    def test(test_range: int = 30) -> NoReturn:
+    def test(test_range: int = 30, show_results: bool = True) -> NoReturn:
         import random
 
         test_case = [random.randint(0, 200) for _ in list(range(0, test_range))]
 
-        insertion_sort: InsertionSort = InsertionSort(test_case)
-        # print(f"| {'TEST-CASE:'.center(10)}|  {test_case}")
+        insertion_sort: InsertionSort = InsertionSort(test_case.copy())
         result: list = insertion_sort.get_result()
-        # print(f"|{'   RESULT: '.center(10)}|  {result}")
 
+        if show_results:
+            print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
 
         del result
         del insertion_sort
+        del test_case
 

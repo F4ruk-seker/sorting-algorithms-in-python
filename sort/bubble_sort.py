@@ -21,15 +21,20 @@ class BubbleSort(Sort):
 
     @staticmethod
     @get_performance_metric
-    def test(test_range: int = 30) -> NoReturn:
+    def test(test_range: int = 30, show_results: bool = True) -> NoReturn:
         import random
         test_case = [random.randint(0, 100) for _ in list(range(0, test_range))]
 
         bubble_sort: BubbleSort = BubbleSort(test_case.copy())
 
         result: list[int] = bubble_sort.get_result()
-        # print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
 
+        if show_results:
+            print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
+
+        del result
+        del bubble_sort
+        del test_case
         # test_case += [True, False, True, '15a1', 'pars', 'parsS', '1453', '1453.50', '1453,55', 'f4ruk.seker']
         # bubble_sort_other_objects: BubbleSort = BubbleSort(test_case.copy()[:10])
         #

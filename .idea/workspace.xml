@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9e3a59c-9204-4b29-ae3a-67a7781a265c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/performance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort/base_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/base_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/bubble_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/insertion_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/insertion_sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sort/selection_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort/selection_sort.py" afterDir="false" />

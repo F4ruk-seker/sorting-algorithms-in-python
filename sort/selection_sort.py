@@ -22,16 +22,18 @@ class SelectionSort(Sort):
             self.list[first_index], self.list[min_index] = self.list[min_index], self.list[first_index]
     @staticmethod
     @get_performance_metric
-    def test(test_range: int = 30) -> NoReturn:
+    def test(test_range: int = 30, show_results: bool = True) -> NoReturn:
         import random
 
         test_case = [random.randint(0, 200) for _ in list(range(0, test_range))]
 
-        selection_sort: SelectionSort = SelectionSort(test_case)
+        selection_sort: SelectionSort = SelectionSort(test_case.copy())
         result: list = selection_sort.get_result()
 
-        # print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
+        if show_results:
+            print(f"""| {'TEST-CASE:'.center(10)}|  {test_case}\n|{'   RESULT: '.center(10)}|  {result}""")
 
         del result
         del selection_sort
+        del test_case
 
